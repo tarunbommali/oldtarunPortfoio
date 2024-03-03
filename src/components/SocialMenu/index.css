@@ -1,0 +1,23 @@
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.social-icon-linkedin {
+  color: white;
+  background-color: #0a66c2;
+}
+
+.social-icon-github {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.social-icon-instagram {
+  color: #ff3f1d;
+  background-color: white;
+}

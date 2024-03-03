@@ -1,0 +1,49 @@
+.what-i-can-container {
+  display: flex;
+  background-color: #1b1f23;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  padding: 48px;
+  background-color: #222425;
+}
+
+.section-active-container {
+  display: flex;
+  justify-content: space-around;
+}
+.service-carosule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4c4c4c;
+  border-radius: 5px;
+  width: 60vw;
+}
+.carosule-img {
+  width: 350px;
+  height: 400px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+}
+
+.box {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: #b386c5;
+  color: white;
+  width: 400px;
+  height: 500px;
+}
+
+.service-img {
+  height: 80px;
+  width: 80px;
+}

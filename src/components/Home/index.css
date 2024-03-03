@@ -1,0 +1,136 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(
+    -45deg,
+    #a560c2 0%,
+    #b386c5 50%,
+    #00bbff 50%,
+    #5da8dc 100%
+  );
+}
+
+.connect-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 80%;
+  padding-left: 15px;
+  margin-bottom: -28px;
+}
+
+.profile-and-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.hello-box {
+  width: 700px;
+  padding: 20px;
+}
+
+.my-name {
+  font-size: 72px;
+}
+
+.job-role {
+  font-size: 24px;
+  display: flex;
+  align-self: flex-end;
+  padding-top: 20px;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+.text-quote-container {
+  display: flex;
+  align-items: center;
+}
+.text-quote-button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+}
+.text-quote {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  font-size: 28px;
+}
+
+.fa-terminal {
+  font-size: 48px;
+  padding-bottom: 5px;
+  transition: all 0.5;
+  color: #000000;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 25px; /* Establishes a positioning context */
+}
+
+.profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #a560c2;
+  margin: 28px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease; /* Apply transition to all properties */
+}
+
+.profile:hover {
+  transform: scale(1.1);
+}
+
+.button-container {
+  display: flex;
+}
+
+.btn-link:hover {
+  transform: scale(1.1);
+}
+
+.btn-link {
+  padding: 12px 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  margin: 0px 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #09b9fb;
+  background-color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.btn-link:hover {
+  background-color: #b283c4;
+  color: black;
+}
+
+.a-link-hire-btns:hover {
+  color: #000000;
+}

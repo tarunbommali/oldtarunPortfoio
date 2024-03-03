@@ -1,0 +1,48 @@
+/* SKILLS FOOTER SECTION */
+
+.skills-footer-section-width {
+  display: flex;
+  justify-content: center;
+  background-color: #202020;
+  width: 100%;
+}
+
+.skills-footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  line-height: 1.5;
+  font-size: 18px;
+  padding: 48px 0px;
+}
+.skills-footer-sub-section {
+  margin-top: 15px;
+}
+.skills-footer-sub-section-title {
+  list-style: none;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-subtitle-line {
+  margin-top: 2px;
+  margin-bottom: 8px;
+  color: #3a3a3a;
+  background-color: #3a3a3a;
+  border: 2px solid #3a3a3a;
+}
+
+.redirect-link {
+  color: aliceblue;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.redirect-link:hover {
+  color: orange;
+}
+
+.redirect-link-icon {
+  margin-left: 5px;
+}

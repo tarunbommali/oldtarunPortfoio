@@ -1,0 +1,42 @@
+/* Education-section */
+.education-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  padding: 5px 18px;
+}
+
+.qulification-list {
+  display: flex;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.qulificaton-item {
+  background-color: #222425;
+  margin: 5px 15px;
+  border-radius: 15px;
+  padding: 25px;
+  width: 600px;
+  border: 2px solid #222425;
+}
+.qulificaton-item:hover {
+  background-color: black;
+}
+.qulification-item-title {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.qulification-item-subtitle {
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.qulification-footer {
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

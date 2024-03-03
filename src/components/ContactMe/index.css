@@ -1,0 +1,133 @@
+/* Contact-me-section css */
+.contact-me-section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #56626f;
+  color: #ffffff;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  min-height: 550px;
+  width: 70%;
+  background-color: #222425;
+  border-radius: 15px;
+  margin: 18px;
+}
+
+.details-section {
+  width: 50%;
+  padding: 48px;
+}
+.details-title {
+  font-style: italic;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  padding-top: 48px;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+  border-radius: 9px;
+  padding: 18px;
+  border: 1px solid #2194ef;
+  background-color: black;
+  font-size: 18px;
+}
+.contact-icon {
+  margin-right: 10px;
+}
+
+.a-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* FORM SECTION  CSS*/
+.form-section {
+  background-color: white;
+  color: #181818;
+  border-radius: 5px;
+  width: 50%;
+  padding: 18px;
+  margin: 48px;
+  height: 500px;
+}
+.form-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+}
+.send-message-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18px;
+}
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-option {
+  padding: 3px 5px;
+  border: 1px solid #b5a8bd;
+  list-style: none;
+  margin: 5px;
+  border-radius: 5px;
+  color: #b5a8bd;
+}
+.send-message-input {
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 5px 0px;
+  border-bottom: 1px solid #b5a8bd;
+  margin: 15px 0px;
+  font-size: 16px;
+}
+.send-button-container {
+  display: flex;
+  align-self: self-start;
+}
+.send-button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: #2194ef;
+  color: white;
+  padding: 12px 15px;
+  margin: 48px;
+  font-size: 16px;
+  border-radius: 9px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    padding: 18px;
+    margin-bottom: 48px;
+  }
+  .details-section {
+    width: 100%;
+  }
+  .form-section {
+    width: 100%;
+    border-radius: 15px;
+    margin: 5px 6px;
+    order: 0;
+  }
+}
