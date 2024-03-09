@@ -48,3 +48,9 @@
   text-decoration: none;
   color: #13b8f8;
 }
+
+@media only screen and (max-width: 768px) {
+  .nav-link-list {
+    display: none;
+  }
+}

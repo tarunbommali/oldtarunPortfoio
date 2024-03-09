@@ -1,8 +1,6 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  background-size: cover;
-
   align-items: center;
   width: 100%;
   background: linear-gradient(
@@ -12,28 +10,47 @@
     #00bbff 50%,
     #5da8dc 100%
   );
+  min-height: 100vh;
+  padding-bottom: 48px;
 }
 
-.connect-box {
+.text-quote {
+  height: 150px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-start;
-  width: 80%;
-  padding-left: 15px;
-  margin-bottom: -28px;
+  border-radius: 5px;
+  font-size: 28px;
+  text-align: center;
 }
 
-.profile-and-name {
+.profile-section {
   display: flex;
-  justify-content: space-around;
+  width: 70%;
+  flex-direction: column;
+}
+
+/* Profile Details Block */
+.profile-details-block {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   border-radius: 5px;
 }
 
-.hello-box {
-  width: 700px;
-  padding: 20px;
+.profile-message-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-name-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.profile-message-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .my-name {
@@ -49,47 +66,11 @@
   margin-right: 80px;
 }
 
-.text-quote-container {
-  display: flex;
-  align-items: center;
-}
-.text-quote-button {
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  font-size: 18px;
-  border: none;
-}
-.text-quote {
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 5px;
-  font-size: 28px;
-}
-
-.fa-terminal {
-  font-size: 48px;
-  padding-bottom: 5px;
-  transition: all 0.5;
-  color: #000000;
-}
-
-.profile-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  padding-bottom: 25px; /* Establishes a positioning context */
-}
-
-.profile {
+.profile-image {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 5px solid #a560c2;
+  border: 2px solid #a560c2;
   margin: 28px;
   position: relative;
   overflow: hidden;
@@ -103,15 +84,38 @@
   transform: scale(1.1);
 }
 
-.button-container {
+.quote-generate-button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+}
+
+/* CONTACT BLOCK */
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 80%;
+}
+
+.contact-buttons-block {
   display: flex;
 }
 
-.btn-link:hover {
+.contact-btn-a-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.contact-btn-a-link:hover {
+  color: #000000;
   transform: scale(1.1);
 }
 
-.btn-link {
+.contact-btn-link {
   padding: 12px 5px;
   border: none;
   border-radius: 5px;
@@ -126,11 +130,44 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.btn-link:hover {
+.contact-btn-link:hover {
   background-color: #b283c4;
   color: black;
 }
 
-.a-link-hire-btns:hover {
-  color: #000000;
+/* CSS rules for small to medium screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .home-container {
+    background-color: #222425;
+    background-image: none;
+    color: white;
+  }
+  .profile-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile-image {
+    order: 0;
+  }
+  .profile-message-block {
+    order: 1;
+  }
+  .profile-details-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-quote {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .contact-block {
+    margin-top: 48px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
 }

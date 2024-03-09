@@ -3,7 +3,7 @@
 .skills-footer-section-width {
   display: flex;
   justify-content: center;
-  background-color: #202020;
+  background-color: black;
   width: 100%;
 }
 
@@ -45,4 +45,14 @@
 
 .redirect-link-icon {
   margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-footer-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .skills-footer-sub-section {
+    padding: 20px;
+  }
 }

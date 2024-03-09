@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+
   background-color: #222425;
   color: white;
   width: 100%;
@@ -20,24 +20,16 @@
   width: 80%;
   margin: 15px 10px;
   border-radius: 15px;
+  min-height: 100vh;
 }
 
 /* Skills Section css */
-.skills-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 18px;
-  border-radius: 15px;
-}
 
 .skills-list {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
-  align-items: center;
+  padding: 18px;
+  border-radius: 15px;
 }
 
 .skill-item-button {
@@ -99,7 +91,7 @@
   justify-content: center;
   width: 100%;
   background-color: #1b1f23;
-  height: 350px;
+  min-height: 350px;
   padding: 25px 35px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -108,6 +100,8 @@
 .topic-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -116,4 +110,45 @@
   font-size: 18px;
   margin: 5px 15px;
   width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-section-concepts {
+    width: 100%;
+    border-radius: 0px;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .skills-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .topic-list {
+    min-height: 100vh;
+  }
+  .topic-item {
+    width: 100%;
+  }
+
+  .topic-list {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-list {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-concepts {
+    min-height: 100vh;
+  }
+
+  .topic-list {
+    min-height: 100vh;
+  }
 }
