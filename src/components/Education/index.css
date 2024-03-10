@@ -13,6 +13,7 @@
   display: flex;
   width: 100%;
   overflow-y: auto;
+  overflow-x: default; /* This prevents horizontal scrolling */
 }
 
 .qulificaton-item {
@@ -20,7 +21,6 @@
   margin: 5px 15px;
   border-radius: 15px;
   padding: 25px;
-  width: 600px;
   border: 2px solid #222425;
 }
 .qulificaton-item:hover {
@@ -39,4 +39,10 @@
 .qulification-footer {
   font-size: medium;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .qulificaton-item {
+    width: 80%;
+  }
 }

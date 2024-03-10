@@ -4,19 +4,20 @@
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #56626f;
+  background-color: #25292e;
   color: #ffffff;
   width: 100%;
+  padding: 28px;
 }
 
 .contact-form {
   display: flex;
   align-items: center;
   min-height: 550px;
-  width: 70%;
-  background-color: #222425;
+  width: 65%;
+  background-color: black;
   border-radius: 15px;
-  margin: 18px;
+  margin: 10px 0px;
 }
 
 .details-section {
@@ -25,6 +26,7 @@
 }
 .details-title {
   font-style: italic;
+  font-size: 28px;
 }
 
 .details {
@@ -76,22 +78,11 @@
   align-items: center;
   padding-top: 18px;
 }
-.options-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.service-option {
-  padding: 3px 5px;
-  border: 1px solid #b5a8bd;
-  list-style: none;
-  margin: 5px;
-  border-radius: 5px;
-  color: #b5a8bd;
-}
+
 .send-message-input {
   border: none;
   outline: none;
-  width: 80%;
+  width: 100%;
   padding: 5px 0px;
   border-bottom: 1px solid #b5a8bd;
   margin: 15px 0px;
@@ -109,7 +100,7 @@
   background-color: #2194ef;
   color: white;
   padding: 12px 15px;
-  margin: 48px;
+  margin: 48px 0px;
   font-size: 16px;
   border-radius: 9px;
   font-weight: 500;
@@ -118,16 +109,38 @@
 @media only screen and (max-width: 768px) {
   .contact-form {
     flex-direction: column;
-    padding: 18px;
+
     margin-bottom: 48px;
   }
   .details-section {
     width: 100%;
+    padding: 28px;
+    order: 1;
   }
   .form-section {
     width: 100%;
     border-radius: 15px;
     margin: 5px 6px;
     order: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form {
+    width: 95%;
+    border-radius: 5px;
+    padding: 18px;
+  }
+
+  .details-section {
+    padding: 18px 0px;
+  }
+  .details-title {
+    font-size: 28px;
+    margin-top: 18px;
+  }
+
+  .contact-me-section {
+    padding: 18px 0px;
   }
 }

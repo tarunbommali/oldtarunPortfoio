@@ -47,3 +47,37 @@
   height: 80px;
   width: 80px;
 }
+
+@media only screen and (max-width: 600px) {
+  .section-active-container {
+    flex-direction: column;
+  }
+
+  .section-active-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    padding: 25px;
+    margin: 5px;
+    width: 100%;
+  }
+  .service-carosule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .carosule-img {
+    width: 100%;
+    height: 200px;
+    padding: 18px 5px;
+  }
+}

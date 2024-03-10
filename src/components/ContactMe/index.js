@@ -8,12 +8,41 @@ const iframeStyle = {
 const ContactMe = () => (
   <div className="contact-me-section" id="contact-section">
     <h1 className="section-title">Contact</h1>
+
     <div className="contact-form">
-      <div className="details-section">
-        <h2 className="details-title">
+      {/* FORM SECTION */}
+      <div className="form-section">
+        <p className="form-title">
           Let's discuss on something
           <span className="highlighted-text"> cool </span>together
-        </h2>
+        </p>
+        <form className="send-message-form">
+          <input
+            type="text"
+            placeholder="Your name"
+            className="send-message-input"
+          />
+          <input
+            type="mail"
+            placeholder="Your email"
+            className="send-message-input"
+          />
+          <input
+            type="text"
+            placeholder="Your message"
+            className="send-message-input"
+          />
+          <div className="send-button-container">
+            <button className="send-button">
+              <RiSendPlane2Line className="contact-icon" />
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div className="details-section">
+        <p className="details-title">Reach out. Find us here.</p>
         <div className="details">
           <p className="contact-details">
             <MdMail className="contact-icon" />
@@ -40,45 +69,6 @@ const ContactMe = () => (
             ></iframe>
           </p>
         </div>
-      </div>
-
-      {/* FORM SECTION */}
-      <div className="form-section">
-        <p className="form-title">Feel free to drop your message </p>
-        <form className="send-message-form">
-          <ul className="options-list">
-            <li className="service-option">Web Devlopment</li>
-            <li className="service-option">Python</li>
-            <li className="service-option">Database</li>
-            <li className="service-option">SQL</li>
-            <li className="service-option">MERN Stack</li>
-            <li className="service-option">Frontend</li>
-            <li className="service-option">Backend</li>
-            <li className="service-option">Data Struture</li>
-          </ul>
-
-          <input
-            type="text"
-            placeholder="Your name"
-            className="send-message-input"
-          />
-          <input
-            type="mail"
-            placeholder="Your email"
-            className="send-message-input"
-          />
-          <input
-            type="text"
-            placeholder="Your message"
-            className="send-message-input"
-          />
-          <div className="send-button-container">
-            <button className="send-button">
-              <RiSendPlane2Line className="contact-icon" />
-              Send Message
-            </button>
-          </div>
-        </form>
       </div>
     </div>
   </div>
