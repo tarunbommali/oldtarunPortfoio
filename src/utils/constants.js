@@ -13,3 +13,9 @@ export const WHATSAPP_URL = `whatsapp://send?phone=+91 9581193026&text=${encodeU
 
 export const RESUME_DOWNLOAD_LINK =
   "https://docs.google.com/document/d/13YS7DEFjv5MNSksfE4flMRyalAcxU3CpG5O7pLTbFJI/edit?usp=sharing";
+
+export const LIGHT_THEME_ICON_URL =
+  "https://res.cloudinary.com/drdgj0pch/image/upload/v1708451054/sun_tjehtv.png";
+
+export const DARK_THEME_ICON_URL =
+  "https://res.cloudinary.com/drdgj0pch/image/upload/v1708451192/moon_ggurcz.png";

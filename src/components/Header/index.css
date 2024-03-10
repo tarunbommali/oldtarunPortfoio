@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 15px 45px;
+  padding: 10px 45px;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
   background-color: #202020;
@@ -22,6 +22,7 @@
 
 .nav-link-list {
   display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -32,8 +33,7 @@
   color: #13b8f8;
 }
 
-.light,
-.dark {
+.theme-img {
   height: 25px;
   width: 25px;
 }
@@ -41,7 +41,6 @@
 .active-nav-link {
   color: #aa6dc3;
   font-weight: bold;
-  border-bottom: 2px solid #aa6dc3;
 }
 
 .link {
@@ -49,8 +48,73 @@
   color: #13b8f8;
 }
 
+/* hamburger */
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin-right: 15px;
+}
+
+.nav-mobile-link-list {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-link-list {
     display: none;
   }
+  .hamburger {
+    color: white;
+    display: block;
+  }
+
+  .menu {
+    display: none; /* Hide menu items initially on smaller screens */
+  }
+
+  .menu.open {
+    display: flex; /* Show menu items when hamburger menu is clicked */
+    flex-direction: column; /* Display menu items in a column */
+    position: absolute;
+    top: 60px; /* Adjust the distance from the top as needed */
+    left: 0;
+    background-color: #202020; /* Background color for the menu */
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+/* MOBILE NAV LINK */
+
+.mobile-nav-link {
+  list-style: none;
+  margin: 15px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #13b8f8;
+  width: 100%;
+}
+.mobile-link {
+  text-decoration: none;
+  color: #13b8f8;
+}
+
+.mobile-active-nav-link {
+  color: #aa6dc3;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.theme-button {
+  padding-bottom: 28px;
 }

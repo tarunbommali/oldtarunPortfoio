@@ -13,14 +13,11 @@
 /* skill-section-concepts */
 .skill-section-concepts {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
   flex-direction: column;
   width: 80%;
   margin: 15px 10px;
   border-radius: 15px;
-  min-height: 100vh;
 }
 
 /* Skills Section css */
@@ -100,8 +97,6 @@
 .topic-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
