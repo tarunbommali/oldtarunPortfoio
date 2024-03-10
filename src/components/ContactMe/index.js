@@ -60,8 +60,7 @@ const ContactMe = () => (
             <iframe
               title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30455.527502152694!2d78.35205300221409!3d17.41462184251568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9422532fb3f7%3A0xc793fad03d2e2af1!2sManikonda%2C%20Telangana!5e0!3m2!1sen!2sin!4v1709438582614!5m2!1sen!2sin"
-              width="600"
-              height="150"
+              className="map"
               style={iframeStyle} // Pass the style object here
               allowfullscreen=""
               loading="lazy"
